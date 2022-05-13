@@ -63,14 +63,14 @@ def grow():
     print('Pattern length:', len(pattern))
     guesses.clear()
 
-
-def tap(x, y):
+#Contador de rondas jugadas - Jesus Fong 
+def tap(x, y): 
     """Respond to screen tap."""
     onscreenclick(None)
     x = floor(x, 200)
     y = floor(y, 200)
     tile = vector(x, y)
-    index = len(guesses)
+    index = len(guesses) #Esta seccion del codigo nos permite ver un contador en la parte derecha con el numero de ronas jugadas
 
     if tile != pattern[index]:
         exit()
